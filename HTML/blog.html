@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <title>Blog</title>
+    <link rel="stylesheet" href="styless.css">
+		
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Technology</span></h1>
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><a href="Gurkhaz.html">Home</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+	<section id="showcase">
+      <div class="container">
+        <h1><mark>Technology</mark></h1> 
+			<p><mark>How Technology affect us in day to day life</mark></p>
+      </div>
+    </section>
+	<section id="main">
+      <div class="container">
+        <article id="main-col">
+          <h1 class="page-title">About Technology</h1>
+			<a href="https://en.wikipedia.org/wiki/Technology">Wikipedia,2019</a>
+		  <p>
+			The use of the term "technology" has changed significantly over the last 200 years. Before the 20th century, 
+			the term was uncommon in English, and it was used either to refer to the description or study of the useful arts, 
+			as in the Massachusetts Institute of Technology. The simplest form of technology is the development and use of basic tools. 
+			The prehistoric discovery of how to control fire and the later Neolithic Revolution increased the available sources of food,
+			and the invention of the wheel helped humans to travel in and control their environment. Development in telephone, internet 
+			printing press have lessend physical barrier in communication and allowed humans to interact with each other in global scale.
+			Technology runs our lives these days. Smartphones, tablets and computers – we really can’t seem to function without them. 
+			In a very short amount of time, technology has exploded in the market and now, many people cannot imagine a life without it.  
+          
+		  </p>
+			<div style="text-align:center"> 
+			  <button onclick="playPause()">Play/Pause</button> 
+			  <button onclick="makeSmall()">Small</button>
+			  <button onclick="makeNormal()">Normal</button>
+			  <br><br>
+			  <video id="video1"  width= "780px" height="400px">
+				<source src="vid 1.mp4" type="video/mp4">
+				Your browser does not support HTML5 video.
+			  </video>
+			</div> 
+			<script> 
+				var myVideo = document.getElementById("video1"); 
+
+				function playPause() { 
+				  if (myVideo.paused) 
+					myVideo.play(); 
+				  else 
+					myVideo.pause(); 
+				}  
+
+				function makeSmall() { 
+					myVideo.width = 320; 
+				} 
+
+				function makeNormal() { 
+					myVideo.width = 780; 
+				} 
+			</script>
+
+          <p class="dark">
+			Much of the technology we take for granted today stems from 50 years ago. In 1968 we saw Robert Noyce and Gordon Moore launch pioneering semiconductor company, Intel,
+			as well as the first large-scale test of RAND researcher Paul Baran’s distributed communications network ARPANET. 
+			Originally intended for scientists and researchers who wanted to share computers remotely,
+			ARPANET quickly turned into something far greater: the Internet.n the last 50 years, technology advancements born out of 1960s innovation have changed the global landscape dramatically. 
+			As developments in areas such as artificial intelligence (AI), big data and the Internet of Things (IoT) converge,
+			we find ourselves at the beginning of a new era of innovation.<br>
+			Technology has influenced a lot in our modern day society. Technology development has helped humans in lot of ways.
+			
+			
+          </p>
+        </article>
+
+        <aside id="sidebar">
+          <div class="dark">
+            <h3>Technology We Use Daily</h3>
+				
+			<p>
+				We apply technology in almost everything we do in our day to day life. We use technology for our work,
+				for communication, transportation, learning, etc. Technology helps us human to sustain our day to day life.<br>
+				Many organization use technology to stay competitive and deliver their services to the customers using technology.<br>
+				Their are many types of technology, but the most impact on our day to day life is given by Communication Technology, 
+				Entertainment Technology and Information Technology. <br>
+				This use of technology to create an entertainment experience. Since entertainment is too broad, everyone gets entertained in their way. 
+				Technology is used to create video games, to develop musical systems and so much more. Works which takes hours to complete are made easier. 
+				Mathematical problems can be solved easily which were difficult in the past and took lot of time . 
+				Due to technology we can carry a small computers in our pockets or in our bags, and can use it anywhere we like.
+			</p>
+			
+          </div>
+        </aside>
+      </div>
+    </section>
+	<footer>
+      <p>Monik, Copyright &copy; 2017</p>
+    </footer>
+  </body>
+</html>

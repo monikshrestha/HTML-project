@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Join Us</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<script type="text/javascript" src="date_time.js"></script>
+	<script type="text/javascript">
+				function validation() {
+					var name = document.forms["messageForm"]["name"].value;
+					var email = document.forms["messageForm"]["email"].value;
+					var phone = document.forms["messageForm"]["phone"].value;
+					var stats = document.forms["messageForm"]["stats"].value;
+					var join = document.forms["messageForm"]["join"].value;
+
+							if (name== "" || email=="" ||  phone==""|| stats=="" || join=="")
+					{
+						alert("Please fill the empty fields to submit.");
+						return false;
+					}else {
+	          alert("Your form is submitted and awaiting review.");
+	          return true;
+	        }
+
+        }
+    </script>
+</head>
+	<body>
+
+		<header>
+
+				<div id="navigation">
+					<img src="logo.png" alt="logo" class="logo" height="60px" width="80px">
+						Gurkhaz
+						<nav>
+							<ul>
+								<li><a href="Gurkhaz.html">HOME</a></li>
+
+							</ul>
+						</nav>
+
+				</div>
+		</header>
+		<span id="date_time"></span>
+        <script type="text/javascript">window.onload = date_time('date_time');</script>
+				<div id="side">
+				
+						<h1 class="heading">Become</h1>
+						<h1 class="heading">A</h1>
+						<h1 class="heading">Part</h1>
+						<h1 class="heading">Of</h1>
+						<h1 class="heading">Gurkhaz</h1>
+				</div>
+		<div class="contact">
+
+			<div class="title">
+				<h1>Fill Up The Form</h1>
+			</div>
+
+			<div class="form">
+				<form name="messageForm" onsubmit="validation()" class="bg-light">
+					<div class="form-items">
+					  <input type="text" class="input" placeholder="Name" id="name" autocomplete="off">
+					  <i class="fas fa-user"></i>
+					</div>
+
+					<div class="form-items">
+					  <input type="text" class="input" placeholder="Email" id="email" autocomplete="off">
+					  <i class="fas fa-envelope"></i>
+					</div>
+
+					<div class="form-items">
+					  <input type="text" class="input" placeholder="Phone No." id="phone" autocomplete="off">
+					  <i class="fas fa-mobile"></i>
+					</div>
+
+					<div class="form-items">
+					  <textarea class="input message" cols="30" rows="10" placeholder="Share Your Game Stats" id="stats" ></textarea>
+					</div>
+
+					<div class="form-items">
+					  <textarea class="input message" cols="30" rows="10" placeholder="Why should you Join?" id="join" ></textarea>
+					</div>
+
+					<div class="btn">
+						<input type="Submit" name="Submit" value="Submit" class="btn">
+					</div>
+				</forms>
+			</div>
+		</div>
+
+
+	</body>
+</html>
